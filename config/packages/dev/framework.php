@@ -6,16 +6,8 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $config): void {
 
-    // Framework
-    $config->extension('framework', [
-        'test' => true,
-        'session' => [
-            'storage_id' => 'session.storage.mock_file'
-        ]
-    ]);
-
     // Web Profiler
     $config->extension('framework', [
-        'profiler' => ['collect' => false]
+        'profiler' => ['only_exceptions' => false]
     ]);
 };

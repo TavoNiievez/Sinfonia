@@ -6,6 +6,13 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $config): void {
 
+    // Assets
+    $config->extension('framework', [
+        'assets' => [
+            'json_manifest_path' => '%kernel.project_dir%/public/build/manifest.json'
+        ]
+    ]);
+
     // Cache
     $config->extension('framework', [
         'cache' => null
@@ -21,7 +28,7 @@ return static function (ContainerConfigurator $config): void {
         ],
         'php_errors' => ['log' => true]
     ]);
-    
+
     // Routing
     $config->extension('framework', [
         'router' => [

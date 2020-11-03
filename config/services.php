@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use SensioLabs\Security\Command\SecurityCheckerCommand;
+use SensioLabs\Security\SecurityChecker;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
 return static function (ContainerConfigurator $config): void {
@@ -21,4 +23,8 @@ return static function (ContainerConfigurator $config): void {
 
     $services->load('App\Controller\\', '../src/Controller')
         ->tag('controller.service_arguments');
+
+    // Security Checker
+    $services->set(SecurityChecker::class);
+    $services->set(SecurityCheckerCommand::class);
 };

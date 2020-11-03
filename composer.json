@@ -17,7 +17,12 @@
         "symfony/yaml": "5.1.*"
     },
     "require-dev": {
-        "rector/rector": "^0.8.48",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpmd/phpmd": "^2.9",
+        "rector/rector": "^0.8",
+        "roave/security-advisories": "dev-latest",
+        "sensiolabs/security-checker": "^6.0",
+        "squizlabs/php_codesniffer": "^3.5",
         "symfony/debug-bundle": "^5.1",
         "symfony/maker-bundle": "^1.23",
         "symfony/twig-bundle": "5.1.*",

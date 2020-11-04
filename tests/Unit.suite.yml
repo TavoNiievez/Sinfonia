@@ -1,0 +1,9 @@
+# Unit & Integration Testing
+actor: UnitTester
+modules:
+    enabled:
+        - Asserts
+        - Symfony:
+              app_path: 'src'
+              environment: 'test'
+        - \App\Tests\Helper\Unit

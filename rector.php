@@ -6,8 +6,8 @@ use Rector\Core\Configuration\Option;
 use Rector\Set\ValueObject\SetList;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
-return static function (ContainerConfigurator $config): void {
-
+return static function (ContainerConfigurator $config): void
+{
     $parameters = $config->parameters();
 
     $parameters->set(Option::SETS, [

@@ -6,8 +6,8 @@ use SensioLabs\Security\Command\SecurityCheckerCommand;
 use SensioLabs\Security\SecurityChecker;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
-return static function (ContainerConfigurator $config): void {
-
+return static function (ContainerConfigurator $config): void
+{
     $config->parameters()
         ->set('app.business_shortname', '%env(BUSINESS_SHORTNAME)%')
         ->set('app.business_fullname', '%env(BUSINESS_FULLNAME)%');

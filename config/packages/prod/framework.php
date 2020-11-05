@@ -6,6 +6,20 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $config): void
 {
+    // Doctrine
+    $config->extension('framework', [
+        'cache' => [
+            'pools' => [
+                'doctrine.result_cache_pool' => [
+                    'adapter' => 'cache.app'
+                ],
+                'doctrine.system_cache_pool' => [
+                    'adapter' => 'cache.system'
+                ]
+            ]
+        ]
+    ]);
+
     // Routing
     $config->extension('framework', [
         'router' => [

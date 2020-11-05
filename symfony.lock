@@ -5,6 +5,20 @@
     "amphp/byte-stream": {
         "version": "v1.8.0"
     },
+    "api-platform/core": {
+        "version": "2.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.5",
+            "ref": "a93061567140e386f107be75340ac2aee3f86cbf"
+        },
+        "files": [
+            "./config/packages/api_platform.yaml",
+            "./config/routes/api_platform.yaml",
+            "./src/Entity/.gitignore"
+        ]
+    },
     "behat/gherkin": {
         "version": "v4.6.2"
     },
@@ -46,6 +60,9 @@
     },
     "codeception/module-phpbrowser": {
         "version": "1.0.2"
+    },
+    "codeception/module-rest": {
+        "version": "1.2.7"
     },
     "codeception/module-symfony": {
         "version": "1.2.0"
@@ -98,6 +115,9 @@
     "felixfbecker/language-server-protocol": {
         "version": "v1.5.0"
     },
+    "fig/link-util": {
+        "version": "1.1.1"
+    },
     "friendsofphp/php-cs-fixer": {
         "version": "2.2",
         "recipe": {
@@ -121,6 +141,9 @@
     },
     "jean85/pretty-package-versions": {
         "version": "1.5.1"
+    },
+    "justinrainbow/json-schema": {
+        "version": "5.2.10"
     },
     "migrify/migrify-kernel": {
         "version": "0.3.52"
@@ -238,6 +261,9 @@
     "psr/http-message": {
         "version": "1.0.1"
     },
+    "psr/link": {
+        "version": "1.0.0"
+    },
     "psr/log": {
         "version": "1.1.3"
     },
@@ -312,6 +338,9 @@
         "files": [
             "./config/packages/security_checker.yaml"
         ]
+    },
+    "softcreatr/jsonpath": {
+        "version": "0.7.2"
     },
     "squizlabs/php_codesniffer": {
         "version": "3.0",
@@ -510,6 +539,12 @@
     "symfony/profiler-pack": {
         "version": "v1.0.5"
     },
+    "symfony/property-access": {
+        "version": "v5.1.8"
+    },
+    "symfony/property-info": {
+        "version": "v5.1.8"
+    },
     "symfony/routing": {
         "version": "5.1",
         "recipe": {
@@ -523,6 +558,9 @@
             "./config/packages/routing.yaml",
             "./config/routes.yaml"
         ]
+    },
+    "symfony/serializer": {
+        "version": "v5.1.8"
     },
     "symfony/service-contracts": {
         "version": "v2.2.0"
@@ -557,6 +595,9 @@
         "version": "v5.1.8"
     },
     "symfony/var-exporter": {
+        "version": "v5.1.8"
+    },
+    "symfony/web-link": {
         "version": "v5.1.8"
     },
     "symfony/web-profiler-bundle": {
@@ -633,5 +674,8 @@
     },
     "webmozart/path-util": {
         "version": "2.3.0"
+    },
+    "willdurand/negotiation": {
+        "version": "v2.3.1"
     }
 }

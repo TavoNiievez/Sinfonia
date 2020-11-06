@@ -46,7 +46,10 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4.11"
+        }
     },
     "autoload": {
         "psr-4": {
@@ -75,8 +78,10 @@
         },
         "ci": [
             "@composer validate --strict",
+            "@test",
             "@psalm"
         ],
+        "test": "vendor/bin/codecept run --colors",
         "psalm": "vendor/bin/psalm --no-cache",
         "rector": "vendor/bin/rector process src -c rector.php --no-progress-bar -n",
         "post-install-cmd": [

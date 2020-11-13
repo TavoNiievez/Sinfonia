@@ -166,6 +166,9 @@
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
+    "fakerphp/faker": {
+        "version": "v1.10.1"
+    },
     "felixfbecker/advanced-json-rpc": {
         "version": "v3.1.1"
     },
@@ -186,9 +189,6 @@
         "files": [
             "./.php_cs.dist"
         ]
-    },
-    "fzaninotto/faker": {
-        "version": "v1.9.1"
     },
     "guzzlehttp/guzzle": {
         "version": "7.2.0"
@@ -386,6 +386,18 @@
     },
     "sebastian/version": {
         "version": "3.0.2"
+    },
+    "sensio/framework-extra-bundle": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        },
+        "files": [
+            "./config/packages/sensio_framework_extra.yaml"
+        ]
     },
     "sensiolabs/security-checker": {
         "version": "4.0",

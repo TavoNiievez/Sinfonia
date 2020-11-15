@@ -29,6 +29,11 @@ return static function (ContainerConfigurator $config): void
         'php_errors' => ['log' => true]
     ]);
 
+    // Mailer
+    $config->extension('framework', [
+        'mailer' => ['dsn' => '%env(MAILER_DSN)%'],
+    ]);
+
     // Routing
     $config->extension('framework', [
         'router' => [
